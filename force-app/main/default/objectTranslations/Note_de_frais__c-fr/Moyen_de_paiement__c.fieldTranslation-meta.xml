@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Moyen de paiement --></label>
+    <name>Moyen_de_paiement__c</name>
+    <picklistValues>
+        <masterLabel>Carte bancaire entreprise</masterLabel>
+        <translation><!-- Carte bancaire entreprise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carte bancaire personnel</masterLabel>
+        <translation><!-- Carte bancaire personnel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque entreprise</masterLabel>
+        <translation><!-- Cheque entreprise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheque personnel</masterLabel>
+        <translation><!-- Cheque personnel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Espèce</masterLabel>
+        <translation><!-- Espèce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Périodicité --></label>
+    <name>Periodicite__c</name>
+    <picklistValues>
+        <masterLabel>Chaque jour calendaire</masterLabel>
+        <translation><!-- Chaque jour calendaire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chaque jours ouvré du mois</masterLabel>
+        <translation><!-- Chaque jours ouvré du mois --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frais à une date précise</masterLabel>
+        <translation><!-- Frais à une date précise --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

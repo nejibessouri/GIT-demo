@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TVA__c</fullName>
+    <label>TVA</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FR Exonération de la TVA</fullName>
+                <default>false</default>
+                <label>FR Exonération de la TVA</label>
+            </value>
+            <value>
+                <fullName>FR N/A</fullName>
+                <default>false</default>
+                <label>FR N/A</label>
+            </value>
+            <value>
+                <fullName>FR TVA 5,5%</fullName>
+                <default>false</default>
+                <label>FR TVA 5,5%</label>
+            </value>
+            <value>
+                <fullName>FR TVA 7%</fullName>
+                <default>false</default>
+                <label>FR TVA 7%</label>
+            </value>
+            <value>
+                <fullName>FR TVA 10%</fullName>
+                <default>false</default>
+                <label>FR TVA 10%</label>
+            </value>
+            <value>
+                <fullName>FR TVA 20%</fullName>
+                <default>false</default>
+                <label>FR TVA 20%</label>
+            </value>
+            <value>
+                <fullName>TN Exonération de la TVA</fullName>
+                <default>false</default>
+                <label>TN Exonération de la TVA</label>
+            </value>
+            <value>
+                <fullName>TN TVA 19%</fullName>
+                <default>false</default>
+                <label>TN TVA 19%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

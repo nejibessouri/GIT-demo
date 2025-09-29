@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Marque --></label>
+    <name>Marque__c</name>
+    <picklistValues>
+        <masterLabel>Audi</masterLabel>
+        <translation><!-- Audi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BMW</masterLabel>
+        <translation><!-- BMW --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mercedes</masterLabel>
+        <translation><!-- Mercedes --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peugeot</masterLabel>
+        <translation><!-- Peugeot --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Volswagen</masterLabel>
+        <translation><!-- Volswagen --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

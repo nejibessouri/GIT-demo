@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moyen_de_paiement__c</fullName>
+    <label>Moyen de paiement</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Espèce</fullName>
+                <default>false</default>
+                <label>Espèce</label>
+            </value>
+            <value>
+                <fullName>Cheque personnel</fullName>
+                <default>false</default>
+                <label>Cheque personnel</label>
+            </value>
+            <value>
+                <fullName>Carte bancaire personnel</fullName>
+                <default>false</default>
+                <label>Carte bancaire personnel</label>
+            </value>
+            <value>
+                <fullName>Carte bancaire entreprise</fullName>
+                <default>false</default>
+                <label>Carte bancaire entreprise</label>
+            </value>
+            <value>
+                <fullName>Cheque entreprise</fullName>
+                <default>false</default>
+                <label>Cheque entreprise</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

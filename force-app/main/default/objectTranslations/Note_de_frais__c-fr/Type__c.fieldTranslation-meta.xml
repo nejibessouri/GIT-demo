@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Avion</masterLabel>
+        <translation><!-- Avion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Divers</masterLabel>
+        <translation><!-- Divers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fourniture</masterLabel>
+        <translation><!-- Fourniture --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frais kilométrique</masterLabel>
+        <translation><!-- Frais kilométrique --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel</masterLabel>
+        <translation><!-- Hotel --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking</masterLabel>
+        <translation><!-- Parking --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Péage</masterLabel>
+        <translation><!-- Péage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restaurant</masterLabel>
+        <translation><!-- Restaurant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Train</masterLabel>
+        <translation><!-- Train --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transport/Taxi</masterLabel>
+        <translation><!-- Transport/Taxi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Téléphone</masterLabel>
+        <translation><!-- Téléphone --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

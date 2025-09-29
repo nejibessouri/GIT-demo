@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voiture a vendre</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voitures a vendre</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Présentation Voiture a vendre</layout>
+        <sections>
+            <label><!-- Liens Personnalisés --></label>
+            <section>Liens Personnalisés</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

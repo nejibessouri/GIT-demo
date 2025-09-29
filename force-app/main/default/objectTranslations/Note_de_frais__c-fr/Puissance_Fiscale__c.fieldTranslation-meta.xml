@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Puissance Fiscale --></label>
+    <name>Puissance_Fiscale__c</name>
+    <picklistValues>
+        <masterLabel>2 roues Moins de 50 CM3</masterLabel>
+        <translation><!-- 2 roues Moins de 50 CM3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3 CV et moins</masterLabel>
+        <translation><!-- 3 CV et moins --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4 CV</masterLabel>
+        <translation><!-- 4 CV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5 CV</masterLabel>
+        <translation><!-- 5 CV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>6 CV</masterLabel>
+        <translation><!-- 6 CV --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>7 CV et plus</masterLabel>
+        <translation><!-- 7 CV et plus --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

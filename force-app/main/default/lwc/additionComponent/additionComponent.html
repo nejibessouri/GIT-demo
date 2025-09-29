@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Addition Component" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input label="First Number" value={firstNumber} onchange={handleInputChange} data-id="first"></lightning-input>
+            <lightning-input label="Second Number" value={secondNumber} onchange={handleInputChange} data-id="second"></lightning-input>
+            <lightning-button label="Add" onclick={addNumbers}></lightning-button>
+            <p class="slds-m-top_medium">Result: {result}</p>
+        </div>
+    </lightning-card>
+</template>

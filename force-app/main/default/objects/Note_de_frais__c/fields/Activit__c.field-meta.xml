@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activit__c</fullName>
+    <label>Activité</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Activité interne/Inter Contrat/Divers</fullName>
+                <default>false</default>
+                <label>Activité interne/Inter Contrat/Divers</label>
+            </value>
+            <value>
+                <fullName>Prestations</fullName>
+                <default>false</default>
+                <label>Prestations</label>
+            </value>
+            <value>
+                <fullName>Projet interne</fullName>
+                <default>false</default>
+                <label>Projet interne</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

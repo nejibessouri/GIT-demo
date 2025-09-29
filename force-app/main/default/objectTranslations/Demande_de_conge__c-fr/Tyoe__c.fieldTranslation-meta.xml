@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Tyoe__c</name>
+    <picklistValues>
+        <masterLabel>Autre</masterLabel>
+        <translation><!-- Autre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congé mariage</masterLabel>
+        <translation><!-- Congé mariage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congé maternité</masterLabel>
+        <translation><!-- Congé maternité --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congé naissance</masterLabel>
+        <translation><!-- Congé naissance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congé payé</masterLabel>
+        <translation><!-- Congé payé --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Congé sans solde</masterLabel>
+        <translation><!-- Congé sans solde --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Décès</masterLabel>
+        <translation><!-- Décès --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enfant malade</masterLabel>
+        <translation><!-- Enfant malade --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maladie</masterLabel>
+        <translation><!-- Maladie --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

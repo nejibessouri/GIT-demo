@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Début --></label>
+    <name>Debut__c</name>
+    <picklistValues>
+        <masterLabel>Matin</masterLabel>
+        <translation><!-- Matin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midi</masterLabel>
+        <translation><!-- Midi --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

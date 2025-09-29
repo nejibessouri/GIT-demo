@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Periodicite__c</fullName>
+    <label>Périodicité</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Frais à une date précise</fullName>
+                <default>false</default>
+                <label>Frais à une date précise</label>
+            </value>
+            <value>
+                <fullName>Chaque jours ouvré du mois</fullName>
+                <default>false</default>
+                <label>Chaque jours ouvré du mois</label>
+            </value>
+            <value>
+                <fullName>Chaque jour calendaire</fullName>
+                <default>false</default>
+                <label>Chaque jour calendaire</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

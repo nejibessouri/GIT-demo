@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- TVA --></label>
+    <name>TVA__c</name>
+    <picklistValues>
+        <masterLabel>FR Exonération de la TVA</masterLabel>
+        <translation><!-- FR Exonération de la TVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR N/A</masterLabel>
+        <translation><!-- FR N/A --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR TVA 10%</masterLabel>
+        <translation><!-- FR TVA 10% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR TVA 20%</masterLabel>
+        <translation><!-- FR TVA 20% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR TVA 5,5%</masterLabel>
+        <translation><!-- FR TVA 5,5% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR TVA 7%</masterLabel>
+        <translation><!-- FR TVA 7% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TN Exonération de la TVA</masterLabel>
+        <translation><!-- TN Exonération de la TVA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TN TVA 19%</masterLabel>
+        <translation><!-- TN TVA 19% --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

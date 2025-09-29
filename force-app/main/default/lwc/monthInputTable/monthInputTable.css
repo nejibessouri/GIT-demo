@@ -1,0 +1,9 @@
+.sunday lightning-input {
+    background-color: #e0e0e0; /* Grisé pour les dimanches */
+    color: #a0a0a0;
+    pointer-events: none;
+}
+
+.normal-day lightning-input {
+    background-color: white; /* Couleur normale pour les autres jours */
+}

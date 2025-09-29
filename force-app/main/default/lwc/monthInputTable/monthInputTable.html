@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Saisie votre compte rendu activité pour le mois en cours" icon-name="custom:custom14">
+        <div class="slds-grid slds-wrap">
+            <template for:each={days} for:item="day">
+                <div key={day.date} class="slds-col" style="flex: 1 0 calc(100% / 31); text-align: center;">
+                    <label>{day.date}</label>
+                    <lightning-input type="number" min="0" max="1" 
+                        value={day.value} data-id={day.date} 
+                        class={day.className} 
+                        onchange={handleInputChange} disabled={day.isSunday}></lightning-input>
+                </div>
+            </template>
+        </div>
+
+        <lightning-button label="Enregistrer" onclick={handleSave}></lightning-button>
+        <lightning-button label="Soumettre en approbation" ></lightning-button>
+    </lightning-card>
+</template>

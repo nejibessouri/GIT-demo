@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Activité --></label>
+    <name>Activit__c</name>
+    <picklistValues>
+        <masterLabel>Activité interne/Inter Contrat/Divers</masterLabel>
+        <translation><!-- Activité interne/Inter Contrat/Divers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prestations</masterLabel>
+        <translation><!-- Prestations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Projet interne</masterLabel>
+        <translation><!-- Projet interne --></translation>
+    </picklistValues>
+</CustomFieldTranslation>
