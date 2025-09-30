@@ -10,4 +10,5 @@ public with sharing class AccountController {
         ];
     }
     system.debug('merge class');
+    //pipeline test
 }
