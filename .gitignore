@@ -7,8 +7,8 @@
 .sfdx/
 .localdevserver/
 deploy-options.json
-.manifest/package.xml
-
+.manifest/
+git remote add origin https://github.com/nejibessouri/GIT-demo.git
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
 
