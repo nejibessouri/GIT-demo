@@ -46,4 +46,3 @@ jobs:
       - name: Deploy source to Salesforce
         run: |
           sfdx force:source:deploy -p force-app -u my-sandbox --testlevel NoTestRun
-```
