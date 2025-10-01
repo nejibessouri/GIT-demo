@@ -1,50 +1,94 @@
-```yaml
-name: Salesforce CI/CD
+name: Salesforce CI/CD (changed components only)
 
 on:
   push:
-    branches: [ "main" ]   # Déclenchement sur push dans main
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]   # Validation aussi sur PR
+    branches: [ "main" ]
 
 jobs:
   validate:
-    name: Validate on Sandbox
+    name: Validate modified components
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # nécessaire pour comparer avec la branche précédente
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
       - name: Install Salesforce CLI
-        run: |
-          npm install sfdx-cli --global
-          sfdx --version
+        run: npm install -g sfdx-cli@latest
 
       - name: Authenticate to Salesforce
-        run: echo "${{ secrets.SF_AUTH_URL }}" > auth.txt && sfdx auth:sfdxurl:store -f auth.txt -a my-sandbox
-
-      - name: Validate deployment (check only)
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          sfdx force:source:deploy -p force-app --checkonly --testlevel NoTestRun -u my-sandbox
+          printf '%s' "$SF_AUTH_URL" > sfdx_auth.txt
+          sfdx auth:sfdxurl:store -f sfdx_auth.txt -a my-sandbox -s
+
+      - name: Get modified source files
+        id: changes
+        run: |
+          FILES=$(git diff --name-only origin/main HEAD | grep "force-app" || true)
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Validate deployment (only changed files)
+        if: steps.changes.outputs.files != ''
+        run: |
+          echo "Deploying the following files:"
+          echo "${{ steps.changes.outputs.files }}"
+          sfdx force:source:deploy \
+            -p "${{ steps.changes.outputs.files }}" \
+            --checkonly \
+            --testlevel NoTestRun \
+            -u my-sandbox \
+            --verbose
 
   deploy:
-    name: Deploy to Sandbox
+    name: Deploy modified components
     runs-on: ubuntu-latest
-    needs: validate   # se lance seulement si la validation passe
+    needs: validate
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
       - name: Install Salesforce CLI
-        run: |
-          npm install sfdx-cli --global
+        run: npm install -g sfdx-cli@latest
 
       - name: Authenticate to Salesforce
-        run: echo "${{ secrets.SF_AUTH_URL }}" > auth.txt && sfdx auth:sfdxurl:store -f auth.txt -a my-sandbox
-
-      - name: Deploy source to Salesforce
+        env:
+          SF_AUTH_URL: ${{ secrets.SF_AUTH_URL }}
         run: |
-          sfdx force:source:deploy -p force-app -u my-sandbox --testlevel NoTestRun
-```
+          printf '%s' "$SF_AUTH_URL" > sfdx_auth.txt
+          sfdx auth:sfdxurl:store -f sfdx_auth.txt -a my-sandbox -s
+
+      - name: Get modified source files
+        id: changes
+        run: |
+          FILES=$(git diff --name-only origin/main HEAD | grep "force-app" || true)
+          echo "files=$FILES" >> $GITHUB_OUTPUT
+
+      - name: Deploy changed components
+        if: steps.changes.outputs.files != ''
+        run: |
+          echo "Deploying the following files:"
+          echo "${{ steps.changes.outputs.files }}"
+          sfdx force:source:deploy \
+            -p "${{ steps.changes.outputs.files }}" \
+            --testlevel NoTestRun \
+            -u my-sandbox \
+            --verbose
