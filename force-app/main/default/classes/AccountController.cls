@@ -9,6 +9,4 @@ public with sharing class AccountController {
             ORDER BY Name
         ];
     }
-    system.debug('merge class');
-    //pipeline test
 }
